@@ -2,5 +2,5 @@
 
 ## Command for start a project
 
-npm i - install dependency
-npm start - start a server
+### npm i - install dependency
+### npm start - start a server
