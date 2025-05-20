@@ -1,0 +1,17 @@
+[
+  {
+    "name": "SuperAdmin",
+    "code": "SUPER_ADMIN",
+    "seq": 1
+  },
+  {
+    "name": "TeamLead",
+    "code": "TEAM_LEAD",
+    "seq": 2
+  },
+  {
+    "name": "TeamMember",
+    "code": "TEAM_MEMBER",
+    "seq": 3
+  }
+]

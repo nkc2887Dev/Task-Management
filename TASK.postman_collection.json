@@ -1,0 +1,1551 @@
+{
+	"info": {
+		"_postman_id": "da0eeb8c-6813-463d-b05b-b2ed31ee0b8b",
+		"name": "TASK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30528257"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "create admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Admin\",\n    \"email\":\"admin@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/admin/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Admin\",\n    \"email\":\"admin@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/admin/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"admin",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "354"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"162-i01CmD92tbjuDyXafmg9GoYoRhU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 02:14:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Admin Created successfully!\",\n    \"data\": {\n        \"name\": \"Admin\",\n        \"email\": \"admin@yopmail.com\",\n        \"password\": \"$2b$08$XlvmDW312NCPSi0BrziPROAsWMf96rULTBSiv5LBCmUAGeFjg2.aW\",\n        \"isActive\": true,\n        \"role\": \"682be4e95abb94bdd2cf4c82\",\n        \"teams\": [],\n        \"_id\": \"682be573d7638465dbf47a25\",\n        \"createdAt\": \"2025-05-20T02:14:11.619Z\",\n        \"updatedAt\": \"2025-05-20T02:14:11.619Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "stats",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzYzMGRlNWU1ZDEyNmM2OTVkYiIsImVtYWlsIjoiYWRtaW5AeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3NzAsImV4cCI6MTc0ODMwNzc3MH0.lm6w00qp6FhSf5IewkGKJQEpvUtztCLSX4HYXWuCN7Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/admin/stats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"stats"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "stats",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzYzMGRlNWU1ZDEyNmM2OTVkYiIsImVtYWlsIjoiYWRtaW5AeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3NzAsImV4cCI6MTc0ODMwNzc3MH0.lm6w00qp6FhSf5IewkGKJQEpvUtztCLSX4HYXWuCN7Y",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/admin/stats",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"admin",
+										"stats"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "350"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15e-VuQ9Kl08pn8nkscUkyvp7MTeo5Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 05:21:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Get stats successfully!\",\n    \"data\": {\n        \"users\": [\n            {\n                \"organization\": \"Company 1\",\n                \"organizationId\": \"682be7b60de5e5d126c695e3\",\n                \"userCount\": 2\n            }\n        ],\n        \"overdueTasks\": [\n            {\n                \"team\": \"Team 1\",\n                \"teamId\": \"682bf86f1ea2601a534cf7f8\",\n                \"overdueTaskCount\": 1\n            }\n        ],\n        \"topUsers\": [\n            {\n                \"completedTaskCount\": 1,\n                \"userId\": \"682bef0d882fd228a1f1c5d8\",\n                \"email\": \"nk2@yopmail.com\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Proj 2\",\n    \"teamId\":\"682bf86f1ea2601a534cf7f8\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/projects/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"projects",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Proj 1\",\n    \"teamId\":\"682bf86f1ea2601a534cf7f8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/projects/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"projects",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "265"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"109-8SQ/Fh58VYopZE1kgqwKEaUbrX4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 04:15:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Project fetch successfully!\",\n    \"data\": {\n        \"name\": \"Proj 1\",\n        \"team\": \"682bf86f1ea2601a534cf7f8\",\n        \"createdBy\": \"682bfa7a1d090ac16f9f3174\",\n        \"_id\": \"682c01d8e6aea8239395bdea\",\n        \"createdAt\": \"2025-05-20T04:15:20.415Z\",\n        \"updatedAt\": \"2025-05-20T04:15:20.415Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Log",
+			"item": [
+				{
+					"name": "activity",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/activity/682bf86f1ea2601a534cf7f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"activity",
+								"682bf86f1ea2601a534cf7f8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/activity/682bf86f1ea2601a534cf7f8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"activity",
+										"682bf86f1ea2601a534cf7f8"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "330"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14a-evCjIXydNC8yXO6vDDOhTzpo1CI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 05:05:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Log fetch successfully!\",\n    \"data\": [\n        {\n            \"_id\": \"682c0d3a1fb9483e0dfcc6a7\",\n            \"action\": \"task_created\",\n            \"resourceType\": \"Task\",\n            \"resourceId\": \"682c0d3a1fb9483e0dfcc6a5\",\n            \"userId\": \"682bfa7a1d090ac16f9f3174\",\n            \"team\": \"682bf86f1ea2601a534cf7f8\",\n            \"createdAt\": \"2025-05-20T05:03:54.306Z\",\n            \"updatedAt\": \"2025-05-20T05:03:54.306Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"task 1\",\n    \"assignedTo\":\"682bef0d882fd228a1f1c5d8\",\n    \"project\":\"682c01d8e6aea8239395bdea\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"task 1\",\n    \"assignedTo\":\"682bef0d882fd228a1f1c5d8\",\n    \"project\":\"682c01d8e6aea8239395bdea\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/tasks/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"tasks",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "344"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"158-8A3KzSa5nLYLjGEVU6AGlml8wNA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 04:34:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task created successfully!\",\n    \"data\": {\n        \"title\": \"task 1\",\n        \"status\": \"Pending\",\n        \"priority\": \"Low\",\n        \"assignedTo\": \"682bef0d882fd228a1f1c5d8\",\n        \"project\": \"682c01d8e6aea8239395bdea\",\n        \"createdBy\": \"682bfa7a1d090ac16f9f3174\",\n        \"_id\": \"682c063ff4b4af6a8f8c059a\",\n        \"createdAt\": \"2025-05-20T04:34:07.349Z\",\n        \"updatedAt\": \"2025-05-20T04:34:07.349Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Org",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Company 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/organizations/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"organizations",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzYzMGRlNWU1ZDEyNmM2OTVkYiIsImVtYWlsIjoiYWRtaW5AeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3NzAsImV4cCI6MTc0ODMwNzc3MH0.lm6w00qp6FhSf5IewkGKJQEpvUtztCLSX4HYXWuCN7Y",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Company 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/organizations/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"organizations",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f0-h70l2jj13WonKIGMU/+zUH7i6jI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 02:45:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Organization create successfully!\",\n    \"data\": {\n        \"name\": \"Company 1\",\n        \"createdBy\": \"682be7630de5e5d126c695db\",\n        \"_id\": \"682becaf79b537a29778845e\",\n        \"createdAt\": \"2025-05-20T02:45:03.633Z\",\n        \"updatedAt\": \"2025-05-20T02:45:03.633Z\"\n    }\n}"
+						},
+						{
+							"name": "access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Company 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/organizations/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"organizations",
+										"create"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-jQsK8g8uho4vsdqMTej64N4VvoM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 02:45:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Access denied: No role assigned\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Team 1\",\n    \"organization\":\"682be7b60de5e5d126c695e3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/teams/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Team 1\",\n    \"organization\":\"682be7b60de5e5d126c695e3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/teams/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"teams",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "284"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11c-XdrhvGAkdDMoOGqCK9q5IbJt3pg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 03:35:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Team create successfully!\",\n    \"data\": {\n        \"name\": \"Team 1\",\n        \"organization\": \"682be7b60de5e5d126c695e3\",\n        \"createdBy\": \"682be7490de5e5d126c695d5\",\n        \"_id\": \"682bf86f1ea2601a534cf7f8\",\n        \"members\": [],\n        \"createdAt\": \"2025-05-20T03:35:11.862Z\",\n        \"updatedAt\": \"2025-05-20T03:35:11.862Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get by org",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Team 1\",\n    \"organization\":\"682be7b60de5e5d126c695e3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/teams/682be7b60de5e5d126c695e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"682be7b60de5e5d126c695e3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Team 1\",\n    \"organization\":\"682be7b60de5e5d126c695e3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/teams/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"teams",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "284"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11c-XdrhvGAkdDMoOGqCK9q5IbJt3pg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 03:35:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Team create successfully!\",\n    \"data\": {\n        \"name\": \"Team 1\",\n        \"organization\": \"682be7b60de5e5d126c695e3\",\n        \"createdBy\": \"682be7490de5e5d126c695d5\",\n        \"_id\": \"682bf86f1ea2601a534cf7f8\",\n        \"members\": [],\n        \"createdAt\": \"2025-05-20T03:35:11.862Z\",\n        \"updatedAt\": \"2025-05-20T03:35:11.862Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/teams/682bf86f1ea2601a534cf7f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"682bf86f1ea2601a534cf7f8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/teams/682bf86f1ea2601a534cf7f8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"teams",
+										"682bf86f1ea2601a534cf7f8"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "284"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11c-7+Rjz99hGb3lMnnQicJVqzgDG2g\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 03:39:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Team create successfully!\",\n    \"data\": {\n        \"_id\": \"682bf86f1ea2601a534cf7f8\",\n        \"name\": \"Team 1\",\n        \"organization\": \"682be7b60de5e5d126c695e3\",\n        \"createdBy\": \"682be7490de5e5d126c695d5\",\n        \"members\": [],\n        \"createdAt\": \"2025-05-20T03:35:11.862Z\",\n        \"updatedAt\": \"2025-05-20T03:35:11.862Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add member",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"682befeb3d23088cde67a274\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/teams/682bf86f1ea2601a534cf7f8/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"682bf86f1ea2601a534cf7f8",
+								"members"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": \"682befeb3d23088cde67a274\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/teams/682bf86f1ea2601a534cf7f8/members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"teams",
+										"682bf86f1ea2601a534cf7f8",
+										"members"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "400"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"190-EaWzkAVfBZ7/MLkrsX6QFdwAjbE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 03:49:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"member added successfully successfully!\",\n    \"data\": {\n        \"_id\": \"682bf86f1ea2601a534cf7f8\",\n        \"name\": \"Team 1\",\n        \"organization\": \"682be7b60de5e5d126c695e3\",\n        \"createdBy\": \"682be7490de5e5d126c695d5\",\n        \"members\": [\n            {\n                \"user\": \"682befeb3d23088cde67a274\",\n                \"role\": \"682be4e95abb94bdd2cf4c89\",\n                \"_id\": \"682bfbd7be7e128f79480217\"\n            }\n        ],\n        \"createdAt\": \"2025-05-20T03:35:11.862Z\",\n        \"updatedAt\": \"2025-05-20T03:49:43.500Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "remove member",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"682befeb3d23088cde67a274\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/teams/682bf86f1ea2601a534cf7f8/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"682bf86f1ea2601a534cf7f8",
+								"members"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "res",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJmYTdhMWQwOTBhYzE2ZjlmMzE3NCIsImVtYWlsIjoibGVhZEB5b3BtYWlsLmNvbSIsImlhdCI6MTc0NzcxMjY0NiwiZXhwIjoxNzQ4MzEyNjQ2fQ.CdrvpPkBkUvoK_YjTKfvOGmF5F4q05qB6vPqPkA1rBs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": \"682befeb3d23088cde67a274\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/teams/682bf86f1ea2601a534cf7f8/members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"teams",
+										"682bf86f1ea2601a534cf7f8",
+										"members"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "286"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11e-zjJ2FwpsEHuv1u3h7Vwh9ZOwKFI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 03:49:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"member remove successfully \",\n    \"data\": {\n        \"_id\": \"682bf86f1ea2601a534cf7f8\",\n        \"name\": \"Team 1\",\n        \"organization\": \"682be7b60de5e5d126c695e3\",\n        \"createdBy\": \"682be7490de5e5d126c695d5\",\n        \"members\": [],\n        \"createdAt\": \"2025-05-20T03:35:11.862Z\",\n        \"updatedAt\": \"2025-05-20T03:49:20.342Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"user1\",\n    \"email\":\"usr1@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/users/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"user1\",\n    \"email\":\"usr1@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/users/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"users",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "317"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13d-OjgAEDRs4FRYEoMMPQNML9t/U84\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 02:17:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"name\": \"user1\",\n        \"email\": \"usr1@yopmail.com\",\n        \"password\": \"$2b$08$itAqmgSP/EfOrJgl2whW2eYo17btkrEmvj.5brhcYP4s2K/dw7DjK\",\n        \"isActive\": true,\n        \"teams\": [],\n        \"_id\": \"682be64a358bb3ea47ed898e\",\n        \"createdAt\": \"2025-05-20T02:17:46.386Z\",\n        \"updatedAt\": \"2025-05-20T02:17:46.386Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"admin@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"nk@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "529"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"211-FCDjSbaZ4wtatp6FRVlhaFR9tgM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 02:22:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User login successfully!\",\n    \"data\": {\n        \"_id\": \"682be7490de5e5d126c695d5\",\n        \"name\": \"user1\",\n        \"email\": \"nk@yopmail.com\",\n        \"password\": \"$2b$08$8kOs35PqPucEusTiG7AV8OuUPs4GpB39tOf0vvSPjNTo9V9PUDRB2\",\n        \"isActive\": true,\n        \"teams\": [],\n        \"createdAt\": \"2025-05-20T02:22:01.887Z\",\n        \"updatedAt\": \"2025-05-20T02:22:04.665Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzQ5MGRlNWU1ZDEyNmM2OTVkNSIsImVtYWlsIjoibmtAeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3MjQsImV4cCI6MTc0ODMwNzcyNH0.MWqorqInnsID64cMwpkXruoMu8fTfVb15__J2Kv76Bk\"\n    }\n}"
+						},
+						{
+							"name": "login admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"admin@yopmail.com\",\n    \"password\":\"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "570"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23a-KtIRm6ZEA9HlYMvLPyZrzNXIBb4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 02:22:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User login successfully!\",\n    \"data\": {\n        \"_id\": \"682be7630de5e5d126c695db\",\n        \"name\": \"Admin\",\n        \"email\": \"admin@yopmail.com\",\n        \"password\": \"$2b$08$DyKrvHRH4EWDPrJ.paN7sOGmuv/4SuV3p.TjN1JseuYMqiY/LoM8W\",\n        \"isActive\": true,\n        \"role\": \"682be4e95abb94bdd2cf4c82\",\n        \"teams\": [],\n        \"createdAt\": \"2025-05-20T02:22:27.739Z\",\n        \"updatedAt\": \"2025-05-20T02:22:50.853Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmJlNzYzMGRlNWU1ZDEyNmM2OTVkYiIsImVtYWlsIjoiYWRtaW5AeW9wbWFpbC5jb20iLCJpYXQiOjE3NDc3MDc3NzAsImV4cCI6MTc0ODMwNzc3MH0.lm6w00qp6FhSf5IewkGKJQEpvUtztCLSX4HYXWuCN7Y\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/organizations/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"organizations",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
