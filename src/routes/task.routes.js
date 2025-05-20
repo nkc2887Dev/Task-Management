@@ -1,5 +1,3 @@
-// const canEditTask = require('../middleware/canEditTask');
-
 const router = require('express').Router();
 const { authentication } = require('../middlewares/auth.middleware');
 const { createTaskController, updateTaskController } = require('../controllers/task.controller');
