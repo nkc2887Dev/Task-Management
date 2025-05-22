@@ -7,5 +7,5 @@ module.exports = {
     EXPIRES_IN: process.env.JWT_EXPIRES_IN || 10000,
     SECRET: process.env.JWT_SECRET || 'myjwtsecret',
   },
-  SEED: process.env.PORT || 'true',
+  SEED: process.env.SEED || 'true',
 };
