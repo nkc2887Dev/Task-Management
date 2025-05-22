@@ -48,7 +48,7 @@ const updateProject = async (id, data) => {
       new: true,
     });
 
-    cache.del(id);
+    cache.set(id, project);
     return { flag: true, data: project };
   } catch (error) {
     console.error('Error - updateProject ', error);
