@@ -17,7 +17,7 @@ const createProject = async (data, user) => {
       team: teamId,
       createdBy: user._id,
     });
-
+    cache.set(project._id.toString(), project); 
     return { flag: true, data: project };
   } catch (error) {
     console.error('Error - createProject ', error);
